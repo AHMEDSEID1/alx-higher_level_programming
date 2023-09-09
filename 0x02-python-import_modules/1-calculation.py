@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-# Import the required functions from calculator_1.py
-from calculator_1 import add, sub, mul, div
+# Import the calculator_1 module
+import calculator_1 as calc
 
-# Assign values to variables a and b
+# Define the variables a and b
 a = 10
 b = 5
 
-# Call each function with a and b as arguments and store the results in variables
-add_result = add(a, b)
-sub_result = sub(a, b)
-mul_result = mul(a, b)
-div_result = div(a, b)
+# Call the functions from the calculator_1 module using the module alias as a prefix
+add_result = calc.add(a, b)
+sub_result = calc.sub(a, b)
+mul_result = calc.mul(a, b)
+div_result = calc.div(a, b)
 
-# Print the results
+# Print the results using the required format
 print("{} + {} = {}".format(a, b, add_result))
 print("{} - {} = {}".format(a, b, sub_result))
 print("{} * {} = {}".format(a, b, mul_result))
