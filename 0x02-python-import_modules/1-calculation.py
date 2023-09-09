@@ -1,14 +1,19 @@
 #!/usr/bin/python3
+# Import the required functions from calculator_1.py
+from calculator_1 import add, sub, mul, div
+
+# Assign values to variables a and b
 a = 10
 b = 5
-import calculator_1
 
-result_add = calculator_1.add(a, b)
-result_sub = calculator_1.sub(a, b)
-result_mul = calculator_1.mul(a, b)
-result_div = calculator_1.div(a, b)
+# Call each function with a and b as arguments and store the results in variables
+add_result = add(a, b)
+sub_result = sub(a, b)
+mul_result = mul(a, b)
+div_result = div(a, b)
 
-print("Addition: {} + {} = {}".format(a, b, result_add))
-print("Subtraction: {} - {} = {}".format(a, b, result_sub))
-print("Multiplication: {} * {} = {}".format(a, b, result_mul))
-print("Division: {} / {} = {}".format(a, b, result_div))
+# Print the results
+print("{} + {} = {}".format(a, b, add_result))
+print("{} - {} = {}".format(a, b, sub_result))
+print("{} * {} = {}".format(a, b, mul_result))
+print("{} / {} = {}".format(a, b, div_result))
